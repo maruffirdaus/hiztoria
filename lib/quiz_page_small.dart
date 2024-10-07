@@ -85,14 +85,12 @@ class QuizPageSmall extends StatelessWidget {
                       color: Colors.white,
                       borderRadius: BorderRadius.only(topLeft: Radius.circular(32.0), topRight: Radius.circular(32.0)),
                     ),
-                    child: Expanded(
-                      child: SafeArea(
-                        child: AnswerList(
-                          question.answers,
-                          selectedAnswer: selectedAnswer,
-                          itemMaxWidth: 400.0,
-                          onTap: (int index) => answerListOnTap(index),
-                        ),
+                    child: SafeArea(
+                      child: AnswerList(
+                        question.answers,
+                        selectedAnswer: selectedAnswer,
+                        itemMaxWidth: 400.0,
+                        onTap: (int index) => answerListOnTap(index),
                       ),
                     ),
                   )

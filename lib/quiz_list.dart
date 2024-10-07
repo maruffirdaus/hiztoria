@@ -14,41 +14,39 @@ class QuizList extends StatelessWidget {
     return ListView.builder(
       itemBuilder: (context, index) {
         final Quiz quiz = _quizzes[index];
-        return Expanded(
-          child: Padding(
-            padding: EdgeInsets.only(
-              left: 32.0,
-              top: (index == 0) ? 32.0 : 0,
-              right: 32.0,
-              bottom: (index == _quizzes.length-1) ? 32.0 : 16,
-            ),
-            child: Center(
-              child: InkWell(
-                onTap: () => onTap(quiz),
-                child: Card(
-                  color: const Color(0xfffafafa),
-                  child: SizedBox(
-                    width: itemMaxWidth,
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          Text(
-                            quiz.name,
-                            style: GoogleFonts.outfit(
-                              fontSize: 18.0,
-                              fontWeight: FontWeight.bold,
-                            ),
+        return Padding(
+          padding: EdgeInsets.only(
+            left: 32.0,
+            top: (index == 0) ? 32.0 : 0,
+            right: 32.0,
+            bottom: (index == _quizzes.length-1) ? 32.0 : 16,
+          ),
+          child: Center(
+            child: InkWell(
+              onTap: () => onTap(quiz),
+              child: Card(
+                color: const Color(0xfffafafa),
+                child: SizedBox(
+                  width: itemMaxWidth,
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Text(
+                          quiz.name,
+                          style: GoogleFonts.outfit(
+                            fontSize: 18.0,
+                            fontWeight: FontWeight.bold,
                           ),
-                          Text(
-                            quiz.description,
-                            style: const TextStyle(
-                              fontSize: 12.0,
-                            ),
-                          )
-                        ],
-                      ),
+                        ),
+                        Text(
+                          quiz.description,
+                          style: const TextStyle(
+                            fontSize: 12.0,
+                          ),
+                        )
+                      ],
                     ),
                   ),
                 ),

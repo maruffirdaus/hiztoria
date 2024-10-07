@@ -52,17 +52,15 @@ class HomePageSmall extends StatelessWidget {
                       color: Colors.white,
                       borderRadius: BorderRadius.only(topLeft: Radius.circular(32.0), topRight: Radius.circular(32.0)),
                     ),
-                    child: Expanded(
-                      child: SafeArea(
-                        child: QuizList(
-                          Quizzes.get(),
-                          itemMaxWidth: 400.0,
-                          onTap: (Quiz quiz) {
-                            Navigator.push(context, MaterialPageRoute(builder: (context) {
-                              return QuizPage(quiz);
-                            }));
-                          },
-                        ),
+                    child: SafeArea(
+                      child: QuizList(
+                        Quizzes.get(),
+                        itemMaxWidth: 400.0,
+                        onTap: (Quiz quiz) {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) {
+                            return QuizPage(quiz);
+                          }));
+                        },
                       ),
                     ),
                   )

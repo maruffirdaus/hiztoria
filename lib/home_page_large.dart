@@ -19,37 +19,35 @@ class HomePageLarge extends StatelessWidget {
         children: [
           SizedBox(
             width: titleSectionWidth,
-            child: Expanded(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 64.0, horizontal: 32.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    Center(
-                      child: Text(
-                        'Hiztoria',
-                        style: GoogleFonts.playball(
-                          textStyle: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 64.0,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                    const Center(
-                      child: Text(
-                        'Strengthen your understanding of history with quizzes',
-                        style: TextStyle(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 64.0, horizontal: 32.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Center(
+                    child: Text(
+                      'Hiztoria',
+                      style: GoogleFonts.playball(
+                        textStyle: const TextStyle(
                           color: Colors.white,
-                          fontSize: 16.0,
+                          fontSize: 64.0,
+                          fontWeight: FontWeight.bold,
                         ),
-                        textAlign: TextAlign.center,
                       ),
-                    )
-                  ],
-                ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                  const Center(
+                    child: Text(
+                      'Strengthen your understanding of history with quizzes',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16.0,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  )
+                ],
               ),
             ),
           ),
@@ -59,17 +57,15 @@ class HomePageLarge extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.only(topLeft: Radius.circular(32.0), bottomLeft: Radius.circular(32.0)),
               ),
-              child: Expanded(
-                child: SafeArea(
-                  child: QuizList(
-                      Quizzes.get(),
-                      itemMaxWidth: 600.0,
-                      onTap: (Quiz quiz) {
-                        Navigator.push(context, MaterialPageRoute(builder: (context) {
-                          return QuizPage(quiz);
-                        }));
-                      }
-                  ),
+              child: SafeArea(
+                child: QuizList(
+                    Quizzes.get(),
+                    itemMaxWidth: 600.0,
+                    onTap: (Quiz quiz) {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) {
+                        return QuizPage(quiz);
+                      }));
+                    }
                 ),
               ),
             ),
