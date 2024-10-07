@@ -47,6 +47,3 @@ class AnswerList extends StatelessWidget {
     );
   }
 }
-
-class Answers {
-}
