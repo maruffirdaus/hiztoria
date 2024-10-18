@@ -1,1 +1,1 @@
-![Hiztoria](https://github.com/user-attachments/assets/fd97970f-d0d9-492c-ad55-01b15e9279d2)
+![Hiztoria](https://github.com/user-attachments/assets/4ce8176c-9c48-4002-84f2-996936268fc3)
