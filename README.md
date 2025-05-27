@@ -6,8 +6,8 @@ A simple quiz app about history, built with Flutter. This project was created as
 
 ### Phone:
 
-<img src="https://github.com/user-attachments/assets/ca3a9063-5150-44d2-8cd0-3da557ff0e4e" height="512px"> &nbsp;
-<img src="https://github.com/user-attachments/assets/a95a4ce2-07f2-4eac-aa36-9a4679a5f007" height="512px"> &nbsp;
+<img src="https://github.com/user-attachments/assets/ca3a9063-5150-44d2-8cd0-3da557ff0e4e" height="512px">
+<img src="https://github.com/user-attachments/assets/a95a4ce2-07f2-4eac-aa36-9a4679a5f007" height="512px">
 <img src="https://github.com/user-attachments/assets/3e8bea65-2e0b-4650-b603-7a83c129f8be" height="512px">
 
 ### Tablet:
